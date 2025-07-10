@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A personal productivity dashboard with to-do list, pomodoro timer, notes, and more.">
+    <title>Personal Productivity Dashboard</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <header>
+    <h1>🚀 Dev Productivity Hub</h1>
+    <p>Your all-in-one dashboard</p>  </header>
+  <main>
+    <nav>
+         <ul style= "display: flex; list-style: none; gap: 120px; ">
+            <li><a href="#todo"> To-do List </a></li>
+            <li><a href="#schedule">Daily Schedule</a></li>
+            <li><a href="#pomodoro">Pomodoro Timer</a></li>
+            <li><a href="#notes">Notes & Journal</a></li>
+            <li><a href="#goals">Goal Tracker</a></li>
+            <li><a href="#bookmarks">Bookmarks / Learning</a></li>
+            <li><a href="#contact-us">Contact-Us</a></li>
+        </ul>
+      </nav>
+    <section id="todo">
+      <h2>✅ To-do List</h2>
+      <p>A personal productivity dashboard is a consolidated digital workspace that helps individuals organize,
+         prioritize, and track tasks and projects in real time</p>
+      <input type="text" id="taskInput" placeholder="Enter a task">
+      <button onclick="addTask()">Add Task</button>
+      <ul id="taskList"></ul>
+      <button onclick="clearAllTasks()">Clear All Tasks</button>
+    </section>
+  </main>
+  <!-- Section for calendar & daily schedule -->
+   <h2>🗓️Daily Schedule</h2>
+   <p>Most of the schedules such a daily schedules are meant for a short period of time.</p>
+   <section id="schedule">
+          <h3>🗓️ Daily Schedule</h3>
+      <table border="1">
+        <tr><th>Time</th><th>Activity</th></tr>
+        <tr><td>9:00 AM</td><td>Code Practice</td></tr>
+        <tr><td>11:00 AM</td><td>Project Work</td></tr>
+      </table>
+    </section>
+    <section id="pomodoro">
+         <h2>⏰ Pomodoro Timer</h2>
+         <p>Pomofocus is a customizable pomodoro timer that works on desktop & mobile browser.</p>
+      <p id="timer">25:00</p>
+      <button onclick="startTimer()">Start</button>
+      <button onclick="pauseTimer()">Pause</button>
+      <button onclick="resetTimer()">Reset</button>
+    </section>
+
+    <!-- Notes / Journal -->
+    <section id="notes">
+      <h2>🧠 Notes & Journal</h2>
+      <p>Note making is the process of writing down key points, ideas, or information in a structured way. </p>
+      <textarea id="note-box" rows="5" cols="50" placeholder="Write your notes here..."></textarea>
+      <br>
+      <button onclick="saveNote()">Save Note</button>
+      <p id="saved-note"></p>
+    </section>
+
+    <!-- Goal Tracker -->
+    <section id="goals">
+      <h2>📊 Goal Tracker</h2>
+      <p>Goal Tracker is a digital platform that enables
+         countries and their citizens to visually track implementation of the 
+         Global Goals and related national policies.</p>
+      <ul>
+        <li>Learn HTML <progress value="90" max="100"></progress></li>
+        <li>Build Dashboard <progress value="70" max="100"></progress></li>
+      </ul>
+    </section>
+
+    <!-- Bookmarks / Learning -->
+    <section id="bookmarks">
+      <h2>📚 Bookmarks / Learning</h2>
+      <p>Web browser bookmarks serve as 
+        a crucial tool for professionals and regular users alike, 
+        enabling the saving of valuable online resources for future reference. </p>
+      <ul style= "display: flex; list-style: none; gap: 20px;" >
+        <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank">HTML Guide</a></li>
+        <li><a href="https://www.freecodecamp.org/" target="_blank">freeCodeCamp</a></li>
+        <li><a href="https://www.youtube.com/" target="_blank">YouTude</a></li>
+        <li><a href="https://chatgpt.com/" target="_blank">Chatgpt</a></li>
+      </ul>
+    </section>
+
+    <section id="contact-us">
+  <h2>📬 Contact-Us</h2>
+  <form onsubmit="submitForm(event)">
+    <label for="name">Name:</label><br>
+    <input type="text" id="name" required><br><br>
+
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" value="sachin8976679477@gmail.com" required><br><br>
+
+    <label for="message">Message:</label><br>
+    <textarea id="message" rows="4" required></textarea><br><br>
+
+    <button type="submit">Submit</button>
+    <p id="form-status"></p>
+  </form>
+    </section>
+    <section id="toggle" style="text-align: center; margin-top: 10px;">
+        <button class="toggle-btn" onclick="toggleTheme()">Toggle Dark Mode</button>
+
+    </section>
+  
+
+<br>
+<hr>
+<iframe
+  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3769.4261210987094!2d72.83279931539044!3d19.145742987038325!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b7a633a16f15%3A0x55fbbd9f7819a998!2sMulund%20West%2C%20Mumbai%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1626872765749!5m2!1sen!2sin"
+  width="100%"
+  height="auto"
+  style="border:0;"
+  allowfullscreen=""
+  loading="lazy"
+  referrerpolicy="no-referrer-when-downgrade">
+</iframe>
+
+  <footer>
+    <p>Built by Sachin Yadav &copy;2025</p>
+  </footer>
+ <script src="script.js"></script>
+</body>
+</html>
