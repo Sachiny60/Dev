@@ -169,12 +169,12 @@ button:hover {
 }
 
 
-#nav-link ul{
+/*#nav-link ul{
   display: flex; 
   list-style: none; 
   gap: 80px;
   text-decoration: none;
-}
+}*/
 
 /* Responsive */
 @media (max-width: 600px) {
@@ -245,6 +245,7 @@ body.dark-mode {
   }
 
 }
+
 
 
 
