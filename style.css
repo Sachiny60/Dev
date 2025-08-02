@@ -169,7 +169,7 @@ button:hover {
 }
 
 
-.nav-link{
+.nav-link ul{
   display: flex; 
   list-style: none; 
   gap: 80px;
@@ -245,5 +245,6 @@ body.dark-mode {
   }
 
 }
+
 
 
