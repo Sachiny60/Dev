@@ -168,6 +168,14 @@ button:hover {
   background-color: #0056b3;
 }
 
+
+.nav-link{
+  display: flex; 
+  list-style: none; 
+  gap: 80px;
+  text-decoration: none;
+}
+
 /* Responsive */
 @media (max-width: 600px) {
   form {
@@ -237,4 +245,5 @@ body.dark-mode {
   }
 
 }
+
 
