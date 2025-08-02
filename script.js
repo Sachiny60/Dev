@@ -107,4 +107,8 @@ window.addEventListener("DOMContentLoaded", () => {
     document.body.classList.add("dark-mode");
   }
 });
+function toggleMenu() {
+    document.getElementById("navbar").classList.toggle("active");
+  }
+
 
