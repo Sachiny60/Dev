@@ -184,3 +184,57 @@ body.dark-mode {
   --bg-color: #121212;
   --text-color: #f1f1f1;
 }
+@media (max-width: 768px){
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #333;
+  color: white;
+  flex-direction: column;
+  padding: 10px 20px;
+}
+
+.logo {
+  font-size: 20px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* Responsive */
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background: #333;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    width: 150px;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+}
+
